@@ -3,7 +3,7 @@
   "slug": "ipd-meta-pro",
   "author": "Mahmood Ahmad",
   "date": "2026-03-26",
-  "path": "C:\\HTML apps\\IPD-Meta-Pro",
+  "path": "C:\\Projects\\ipd-meta-pro-link",
   "type": "methods",
   "primary_estimand": "Pooled IPD treatment effect",
   "summary": "A 51,305-line browser application for IPD meta-analysis with one-stage and two-stage pooling, achieving 100% pass rate across 56 automated regression tests.",
