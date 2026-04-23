@@ -20299,7 +20299,7 @@ function displayUncertaintyReport() {
 
  html += '<div class="form-group" style="margin-top:1rem;">';
 
- html += '<label class="form-label">Enter baseline risk to see natural frequency framing:</label>';
+ html += '<label class="form-label" for="baselineRiskInput">Enter baseline risk to see natural frequency framing:</label>';
 
  html += '<input type="number" class="form-input" id="baselineRiskInput" aria-label="e.g., 0.15 for 15%" placeholder="e.g., 0.15 for 15%" step="0.01" min="0" max="1">';
 
@@ -21379,7 +21379,7 @@ function showMIDAssessment() {
 
  html += '<h4>Select Outcome Scale</h4>';
 
- html += '<select class="form-select" id="midScaleSelect" onchange="updateMIDAssessment()" style="max-width:400px;">';
+ html += '<select class="form-select"  aria-label="Select Outcome Scale" id="midScaleSelect" onchange="updateMIDAssessment()" style="max-width:400px;">';
 
  html += '<option value="">-- Select outcome scale --</option>';
 
@@ -21399,7 +21399,7 @@ function showMIDAssessment() {
 
  html += '<div id="customMIDInput" style="display:none; margin-top:1rem;">';
 
- html += '<label class="form-label">Enter custom MID value:</label>';
+ html += '<label class="form-label" for="customMIDValue">Enter custom MID value:</label>';
 
  html += '<input type="number" class="form-input" id="customMIDValue" step="0.1" style="max-width:200px;">';
 
@@ -21945,7 +21945,7 @@ function showQualityWeightingOptions() {
 
  html += '<div class="form-group" style="margin-top:1rem;">';
 
- html += '<label class="form-label">Weighting Method:</label>';
+ html += '<label class="form-label" for="qualityMethod">Weighting Method:</label>';
 
  html += '<select class="form-select" id="qualityMethod" style="max-width:400px;">';
 
@@ -23064,19 +23064,19 @@ function applyQualityWeighting() {
 
  html += '<div style="display:grid;gap:1rem">';
 
- html += '<div><label>Effect Measure:</label><select id="evalMeasure" style="width:100%;padding:0.5rem;margin-top:0.25rem">';
+ html += '<div><label for="evalMeasure">Effect Measure:</label><select id="evalMeasure" style="width:100%;padding:0.5rem;margin-top:0.25rem">';
 
  html += '<option value="rr">Risk Ratio / Hazard Ratio</option><option value="or">Odds Ratio</option><option value="smd">Standardized Mean Difference</option></select></div>';
 
- html += '<div><label>Effect Estimate:</label><input id="evalEffect" type="number" step="0.01" value="1.5" style="width:100%;padding:0.5rem;margin-top:0.25rem"></div>';
+ html += '<div><label for="evalEffect">Effect Estimate:</label><input id="evalEffect" type="number" step="0.01" value="1.5" style="width:100%;padding:0.5rem;margin-top:0.25rem"></div>';
 
  html += '<div style="display:grid;grid-template-columns:1fr 1fr;gap:0.5rem">';
 
- html += '<div><label>CI Lower:</label><input id="evalLower" type="number" step="0.01" value="1.2" style="width:100%;padding:0.5rem;margin-top:0.25rem"></div>';
+ html += '<div><label for="evalLower">CI Lower:</label><input id="evalLower" type="number" step="0.01" value="1.2" style="width:100%;padding:0.5rem;margin-top:0.25rem"></div>';
 
- html += '<div><label>CI Upper:</label><input id="evalUpper" type="number" step="0.01" value="1.9" style="width:100%;padding:0.5rem;margin-top:0.25rem"></div></div>';
+ html += '<div><label for="evalUpper">CI Upper:</label><input id="evalUpper" type="number" step="0.01" value="1.9" style="width:100%;padding:0.5rem;margin-top:0.25rem"></div></div>';
 
- html += '<div id="evalPrevalence" style="display:none"><label>Outcome Prevalence (for OR):</label><input id="evalPrev" type="number" step="0.01" value="0.1" min="0" max="1" style="width:100%;padding:0.5rem;margin-top:0.25rem"></div>';
+ html += '<div id="evalPrevalence" style="display:none"><label for="evalPrev">Outcome Prevalence (for OR):</label><input id="evalPrev" type="number" step="0.01" value="0.1" min="0" max="1" style="width:100%;padding:0.5rem;margin-top:0.25rem"></div>';
 
  html += '<button class="btn btn-primary" onclick="EValueCalculator.calculate()">Calculate E-Value</button>';
 
@@ -24130,11 +24130,11 @@ function applyQualityWeighting() {
 
  html += '<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:0.5rem;margin-bottom:1rem">';
 
- html += '<div><label>Effect estimate:</label><input id="missingEffect" type="number" step="0.01" value="0.5" style="width:100%;padding:0.5rem"></div>';
+ html += '<div><label for="missingEffect">Effect estimate:</label><input id="missingEffect" type="number" step="0.01" value="0.5" style="width:100%;padding:0.5rem"></div>';
 
- html += '<div><label>Standard error:</label><input id="missingSE" type="number" step="0.01" value="0.15" style="width:100%;padding:0.5rem"></div>';
+ html += '<div><label for="missingSE">Standard error:</label><input id="missingSE" type="number" step="0.01" value="0.15" style="width:100%;padding:0.5rem"></div>';
 
- html += '<div><label>Delta (shift):</label><input id="missingDelta" type="number" step="0.05" value="-0.2" style="width:100%;padding:0.5rem"></div>';
+ html += '<div><label for="missingDelta">Delta (shift):</label><input id="missingDelta" type="number" step="0.05" value="-0.2" style="width:100%;padding:0.5rem"></div>';
 
  html += '</div>';
 
