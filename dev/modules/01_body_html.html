@@ -420,7 +420,7 @@
 
                         <div class="form-group">
 
-                            <label class="form-label">Study ID Variable</label>
+                            <label class="form-label" for="varStudy">Study ID Variable</label>
 
                             <select class="form-select" id="varStudy"></select>
 
@@ -428,7 +428,7 @@
 
                         <div class="form-group">
 
-                            <label class="form-label">Treatment Variable</label>
+                            <label class="form-label" for="varTreatment">Treatment Variable</label>
 
                             <select class="form-select" id="varTreatment"></select>
 
@@ -442,7 +442,7 @@
 
                         <div class="form-group">
 
-                            <label class="form-label">Outcome Type</label>
+                            <label class="form-label" for="outcomeType">Outcome Type</label>
 
                             <select class="form-select" id="outcomeType" onchange="updateOutcomeVars()">
 
@@ -458,7 +458,7 @@
 
                         <div class="form-group" id="timeVarGroup">
 
-                            <label class="form-label">Time Variable</label>
+                            <label class="form-label" for="varTime">Time Variable</label>
 
                             <select class="form-select" id="varTime"></select>
 
@@ -466,7 +466,7 @@
 
                         <div class="form-group" id="eventVarGroup">
 
-                            <label class="form-label">Event/Outcome Variable</label>
+                            <label class="form-label" for="varEvent">Event/Outcome Variable</label>
 
                             <select class="form-select" id="varEvent"></select>
 
@@ -512,7 +512,7 @@
 
                         <div class="form-group">
 
-                            <label class="form-label">Analysis Approach</label>
+                            <label class="form-label" for="analysisApproach">Analysis Approach</label>
 
                             <select class="form-select" id="analysisApproach">
 
@@ -528,7 +528,7 @@
 
                         <div class="form-group">
 
-                            <label class="form-label">Effect Measure</label>
+                            <label class="form-label" for="effectMeasure">Effect Measure</label>
 
                             <select class="form-select" id="effectMeasure">
 
@@ -556,7 +556,7 @@
 
                         <div class="form-group">
 
-                            <label class="form-label">Random-Effects Method</label>
+                            <label class="form-label" for="reMethod">Random-Effects Method</label>
 
                             <select class="form-select" id="reMethod">
 
@@ -580,7 +580,7 @@
 
                         <div class="form-group">
 
-                            <label class="form-label">Confidence Level</label>
+                            <label class="form-label" for="confLevel">Confidence Level</label>
 
                             <select class="form-select" id="confLevel">
 
@@ -602,7 +602,7 @@
 
                         <label class="checkbox-item">
 
-                            <input type="checkbox" id="useHKSJ" checked>
+                            <input type="checkbox" id="useHKSJ" checked aria-label="Apply Hartung-Knapp-Sidik-Jonkman adjustment">
 
                             Apply Hartung-Knapp-Sidik-Jonkman adjustment
 
@@ -730,7 +730,7 @@
 
                             <label class="checkbox-item">
 
-                                <input type="checkbox" name="interaction" value="treatment*age">
+                                <input type="checkbox" name="interaction" value="treatment*age" aria-label="Treatment x Age">
 
                                 Treatment x Age
 
@@ -738,7 +738,7 @@
 
                             <label class="checkbox-item">
 
-                                <input type="checkbox" name="interaction" value="treatment*sex">
+                                <input type="checkbox" name="interaction" value="treatment*sex" aria-label="Treatment x Sex">
 
                                 Treatment x Sex
 
@@ -746,7 +746,7 @@
 
                             <label class="checkbox-item">
 
-                                <input type="checkbox" name="interaction" value="treatment*stage">
+                                <input type="checkbox" name="interaction" value="treatment*stage" aria-label="Treatment x Stage">
 
                                 Treatment x Stage
 
@@ -1692,7 +1692,7 @@
 
                         <div class="form-group">
 
-                            <label class="form-label">Prior for Effect (Mean)</label>
+                            <label class="form-label" for="priorMean">Prior for Effect (Mean)</label>
 
                             <select class="form-select" id="priorMean">
 
@@ -1706,7 +1706,7 @@
 
                         <div class="form-group">
 
-                            <label class="form-label">Prior for Effect (SD)</label>
+                            <label class="form-label" for="priorSD">Prior for Effect (SD)</label>
 
                             <select class="form-select" id="priorSD">
 
@@ -1722,7 +1722,7 @@
 
                         <div class="form-group">
 
-                            <label class="form-label">Prior for Tau</label>
+                            <label class="form-label" for="priorTau">Prior for Tau</label>
 
                             <select class="form-select" id="priorTau">
 
@@ -1744,7 +1744,7 @@
 
                         <div class="form-group">
 
-                            <label class="form-label">MCMC Iterations</label>
+                            <label class="form-label" for="mcmcIter">MCMC Iterations</label>
 
                             <input type="number" class="form-input" id="mcmcIter" value="10000">
 
@@ -1752,7 +1752,7 @@
 
                         <div class="form-group">
 
-                            <label class="form-label">Burn-in</label>
+                            <label class="form-label" for="mcmcBurnin">Burn-in</label>
 
                             <input type="number" class="form-input" id="mcmcBurnin" value="2000">
 
@@ -1760,7 +1760,7 @@
 
                         <div class="form-group">
 
-                            <label class="form-label">Chains</label>
+                            <label class="form-label" for="mcmcChains">Chains</label>
 
                             <select class="form-select" id="mcmcChains">
 
@@ -2182,7 +2182,7 @@
 
                         <div class="form-group">
 
-                            <label class="form-label">Regression Type</label>
+                            <label class="form-label" for="metaregType">Regression Type</label>
 
                             <select class="form-select" id="metaregType">
 

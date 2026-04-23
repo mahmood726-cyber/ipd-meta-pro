@@ -493,7 +493,7 @@
 
                         <div class="form-group">
 
-                            <label class="form-label">Study ID Variable</label>
+                            <label class="form-label" for="varStudy">Study ID Variable</label>
 
                             <select class="form-select" id="varStudy"></select>
 
@@ -501,7 +501,7 @@
 
                         <div class="form-group">
 
-                            <label class="form-label">Treatment Variable</label>
+                            <label class="form-label" for="varTreatment">Treatment Variable</label>
 
                             <select class="form-select" id="varTreatment"></select>
 
@@ -515,7 +515,7 @@
 
                         <div class="form-group">
 
-                            <label class="form-label">Outcome Type</label>
+                            <label class="form-label" for="outcomeType">Outcome Type</label>
 
                             <select class="form-select" id="outcomeType" onchange="updateOutcomeVars()">
 
@@ -531,7 +531,7 @@
 
                         <div class="form-group" id="timeVarGroup">
 
-                            <label class="form-label">Time Variable</label>
+                            <label class="form-label" for="varTime">Time Variable</label>
 
                             <select class="form-select" id="varTime"></select>
 
@@ -539,7 +539,7 @@
 
                         <div class="form-group" id="eventVarGroup">
 
-                            <label class="form-label">Event/Outcome Variable</label>
+                            <label class="form-label" for="varEvent">Event/Outcome Variable</label>
 
                             <select class="form-select" id="varEvent"></select>
 
@@ -585,7 +585,7 @@
 
                         <div class="form-group">
 
-                            <label class="form-label">Analysis Approach</label>
+                            <label class="form-label" for="analysisApproach">Analysis Approach</label>
 
                             <select class="form-select" id="analysisApproach">
 
@@ -601,7 +601,7 @@
 
                         <div class="form-group">
 
-                            <label class="form-label">Effect Measure</label>
+                            <label class="form-label" for="effectMeasure">Effect Measure</label>
 
                             <select class="form-select" id="effectMeasure">
 
@@ -629,7 +629,7 @@
 
                         <div class="form-group">
 
-                            <label class="form-label">Random-Effects Method</label>
+                            <label class="form-label" for="reMethod">Random-Effects Method</label>
 
                             <select class="form-select" id="reMethod">
 
@@ -653,7 +653,7 @@
 
                         <div class="form-group">
 
-                            <label class="form-label">Confidence Level</label>
+                            <label class="form-label" for="confLevel">Confidence Level</label>
 
                             <select class="form-select" id="confLevel">
 
@@ -675,7 +675,7 @@
 
                         <label class="checkbox-item">
 
-                            <input type="checkbox" id="useHKSJ" checked>
+                            <input type="checkbox" id="useHKSJ" checked aria-label="Apply Hartung-Knapp-Sidik-Jonkman adjustment">
 
                             Apply Hartung-Knapp-Sidik-Jonkman adjustment
 
@@ -799,7 +799,7 @@
 
                             <label class="checkbox-item">
 
-                                <input type="checkbox" name="interaction" value="treatment*age">
+                                <input type="checkbox" name="interaction" value="treatment*age" aria-label="Treatment x Age">
 
                                 Treatment x Age
 
@@ -807,7 +807,7 @@
 
                             <label class="checkbox-item">
 
-                                <input type="checkbox" name="interaction" value="treatment*sex">
+                                <input type="checkbox" name="interaction" value="treatment*sex" aria-label="Treatment x Sex">
 
                                 Treatment x Sex
 
@@ -815,7 +815,7 @@
 
                             <label class="checkbox-item">
 
-                                <input type="checkbox" name="interaction" value="treatment*stage">
+                                <input type="checkbox" name="interaction" value="treatment*stage" aria-label="Treatment x Stage">
 
                                 Treatment x Stage
 
@@ -1765,7 +1765,7 @@
 
                         <div class="form-group">
 
-                            <label class="form-label">Prior for Effect (Mean)</label>
+                            <label class="form-label" for="priorMean">Prior for Effect (Mean)</label>
 
                             <select class="form-select" id="priorMean">
 
@@ -1779,7 +1779,7 @@
 
                         <div class="form-group">
 
-                            <label class="form-label">Prior for Effect (SD)</label>
+                            <label class="form-label" for="priorSD">Prior for Effect (SD)</label>
 
                             <select class="form-select" id="priorSD">
 
@@ -1795,7 +1795,7 @@
 
                         <div class="form-group">
 
-                            <label class="form-label">Prior for Tau</label>
+                            <label class="form-label" for="priorTau">Prior for Tau</label>
 
                             <select class="form-select" id="priorTau">
 
@@ -1817,7 +1817,7 @@
 
                         <div class="form-group">
 
-                            <label class="form-label">MCMC Iterations</label>
+                            <label class="form-label" for="mcmcIter">MCMC Iterations</label>
 
                             <input type="number" class="form-input" id="mcmcIter" value="10000">
 
@@ -1825,7 +1825,7 @@
 
                         <div class="form-group">
 
-                            <label class="form-label">Burn-in</label>
+                            <label class="form-label" for="mcmcBurnin">Burn-in</label>
 
                             <input type="number" class="form-input" id="mcmcBurnin" value="2000">
 
@@ -1833,7 +1833,7 @@
 
                         <div class="form-group">
 
-                            <label class="form-label">Chains</label>
+                            <label class="form-label" for="mcmcChains">Chains</label>
 
                             <select class="form-select" id="mcmcChains">
 
@@ -2255,7 +2255,7 @@
 
                         <div class="form-group">
 
-                            <label class="form-label">Regression Type</label>
+                            <label class="form-label" for="metaregType">Regression Type</label>
 
                             <select class="form-select" id="metaregType">
 
@@ -3716,7 +3716,7 @@ cat("========================================================================\n"
 
  <div class="form-group">
 
- <label>Heterogeneity Prior (τ²)</label>
+ <label for="tauPriorSlider">Heterogeneity Prior (τ²)</label>
 
  <input type="range" id="tauPriorSlider" min="0" max="1" step="0.01" value="0.1"
 
@@ -3730,7 +3730,7 @@ cat("========================================================================\n"
 
  <div class="form-group">
 
- <label>Effect Size Transformation</label>
+ <label for="effectTransform">Effect Size Transformation</label>
 
  <select id="effectTransform" onchange="updateSensitivityRealtime()">
 
@@ -3750,7 +3750,7 @@ cat("========================================================================\n"
 
  <div class="form-group">
 
- <label>Correlation Assumption (ρ)</label>
+ <label for="rhoSlider">Correlation Assumption (ρ)</label>
 
  <input type="range" id="rhoSlider" min="0" max="0.9" step="0.1" value="0.5"
 
@@ -3764,7 +3764,7 @@ cat("========================================================================\n"
 
  <div class="form-group">
 
- <label>Outlier Threshold (IQR multiplier)</label>
+ <label for="outlierSlider">Outlier Threshold (IQR multiplier)</label>
 
  <input type="range" id="outlierSlider" min="1" max="4" step="0.5" value="2.5"
 
@@ -3778,7 +3778,7 @@ cat("========================================================================\n"
 
  <div class="form-group">
 
- <label>Weight Cap (%)</label>
+ <label for="weightCapSlider">Weight Cap (%)</label>
 
  <input type="range" id="weightCapSlider" min="10" max="100" step="5" value="100"
 
@@ -4962,13 +4962,13 @@ function copyInterpretation() {
 
  <label>Animation Speed:
 
- <input type="range" id="animSpeedSlider" min="1" max="10" value="5" style="width: 100px;">
+ <input type="range" aria-label="Animation Speed" id="animSpeedSlider" min="1" max="10" value="5" style="width: 100px;">
 
  </label>
 
  <label>
 
- <input type="checkbox" id="showTrailsCheckbox" checked> Show trails
+ <input type="checkbox" id="showTrailsCheckbox" checked aria-label="Show trails"> Show trails
 
  </label>
 
@@ -20301,7 +20301,7 @@ function displayUncertaintyReport() {
 
  html += '<label class="form-label">Enter baseline risk to see natural frequency framing:</label>';
 
- html += '<input type="number" class="form-input" id="baselineRiskInput" placeholder="e.g., 0.15 for 15%" step="0.01" min="0" max="1">';
+ html += '<input type="number" class="form-input" id="baselineRiskInput" aria-label="e.g., 0.15 for 15%" placeholder="e.g., 0.15 for 15%" step="0.01" min="0" max="1">';
 
  html += '<button class="btn btn-secondary" onclick="updateNaturalFrequency()" style="margin-top:0.5rem;">Calculate</button>';
 
@@ -23310,7 +23310,7 @@ function applyQualityWeighting() {
 
  html += '<p style="font-size:0.85rem;color:var(--text-secondary);margin-bottom:1rem">Enter comma-separated p-values:</p>';
 
- html += '<input id="multPValues" type="text" placeholder="0.03, 0.15, 0.04, 0.008" style="width:100%;padding:0.5rem">';
+ html += '<input id="multPValues" type="text" aria-label="0.03, 0.15, 0.04, 0.008" placeholder="0.03, 0.15, 0.04, 0.008" style="width:100%;padding:0.5rem">';
 
  html += '<button class="btn btn-primary" style="margin-top:1rem" onclick="MultiplicityAdjustment.calculate()">Calculate Adjusted P-Values</button>';
 
@@ -23756,7 +23756,7 @@ function applyQualityWeighting() {
 
  html += '<div style="margin-top:1.5rem">';
 
- html += '<label><input type="checkbox" id="dontShowProtocol" style="margin-right:0.5rem">Don\'t show this reminder again</label>';
+ html += '<label><input type="checkbox" id="dontShowProtocol" style="margin-right:0.5rem" aria-label="Don\'t show this reminder again">Don\'t show this reminder again</label>';
 
  html += '</div>';
 
@@ -24290,9 +24290,9 @@ function applyQualityWeighting() {
 
  html += '<div style="margin-bottom:1rem">';
 
- html += '<label><input type="radio" name="hasCOI" value="no" checked onchange="ConflictOfInterest.toggleDetails(false)"> No conflicts of interest to declare</label><br>';
+ html += '<label><input type="radio" name="hasCOI" value="no" checked onchange="ConflictOfInterest.toggleDetails(false)" aria-label="No conflicts of interest to declare"> No conflicts of interest to declare</label><br>';
 
- html += '<label><input type="radio" name="hasCOI" value="yes" onchange="ConflictOfInterest.toggleDetails(true)"> Potential conflicts to disclose</label>';
+ html += '<label><input type="radio" name="hasCOI" value="yes" onchange="ConflictOfInterest.toggleDetails(true)" aria-label="Potential conflicts to disclose"> Potential conflicts to disclose</label>';
 
  html += '</div>';
 
@@ -24304,13 +24304,13 @@ function applyQualityWeighting() {
 
  this.categories.forEach(function(cat, i) {
 
- html += '<label style="display:block;margin:0.25rem 0"><input type="checkbox" id="coi' + i + '"> ' + cat + '</label>';
+ html += '<label style="display:block;margin:0.25rem 0"><input type="checkbox" id="coi' + i + '" aria-label="' + cat + '"> ' + cat + '</label>';
 
  });
 
  html += '<div style="margin-top:1rem"><label><strong>Details:</strong></label>';
 
- html += '<textarea id="coiText" style="width:100%;height:80px;padding:0.5rem;margin-top:0.25rem" placeholder="Describe specific conflicts..."></textarea></div>';
+ html += '<textarea id="coiText" style="width:100%;height:80px;padding:0.5rem;margin-top:0.25rem" aria-label="Describe specific conflicts..." placeholder="Describe specific conflicts..."></textarea></div>';
 
  html += '</div>';
 
@@ -24492,7 +24492,7 @@ function applyQualityWeighting() {
 
  html += '<div style="margin-bottom:1.5rem"><label><strong>Comparison:</strong></label>';
 
- html += '<input id="cinemaComparison" type="text" placeholder="e.g., Treatment A vs Treatment B" style="width:100%;padding:0.5rem;margin-top:0.25rem"></div>';
+ html += '<input id="cinemaComparison" type="text" aria-label="e.g., Treatment A vs Treatment B" placeholder="e.g., Treatment A vs Treatment B" style="width:100%;padding:0.5rem;margin-top:0.25rem"></div>';
 
 
 
@@ -24678,7 +24678,7 @@ function applyQualityWeighting() {
 
  html += '<div style="margin-bottom:1rem"><label><strong>Authors (comma-separated):</strong></label>';
 
- html += '<input id="creditAuthors" type="text" placeholder="Smith J, Jones A, Williams B" style="width:100%;padding:0.5rem;margin-top:0.25rem"></div>';
+ html += '<input id="creditAuthors" type="text" aria-label="Smith J, Jones A, Williams B" placeholder="Smith J, Jones A, Williams B" style="width:100%;padding:0.5rem;margin-top:0.25rem"></div>';
 
 
 
@@ -24690,7 +24690,7 @@ function applyQualityWeighting() {
 
  html += '<div style="margin-bottom:0.75rem"><label><strong>' + role + ':</strong></label>';
 
- html += '<input id="credit' + i + '" type="text" placeholder="Author initials (e.g., JS, AJ)" style="width:100%;padding:0.5rem;margin-top:0.25rem"></div>';
+ html += '<input id="credit' + i + '" type="text" aria-label="Author initials (e.g., JS, AJ)" placeholder="Author initials (e.g., JS, AJ)" style="width:100%;padding:0.5rem;margin-top:0.25rem"></div>';
 
  });
 
@@ -29276,7 +29276,7 @@ function showMICEImputationModal() {
 
                     <div class="form-group">
 
-                        <label class="form-label">Number of Imputations</label>
+                        <label class="form-label" for="miceNImp">Number of Imputations</label>
 
                         <select class="form-select" id="miceNImp">
 
@@ -29294,7 +29294,7 @@ function showMICEImputationModal() {
 
                     <div class="form-group">
 
-                        <label class="form-label">Iterations</label>
+                        <label class="form-label" for="miceIter">Iterations</label>
 
                         <select class="form-select" id="miceIter">
 
@@ -41427,41 +41427,41 @@ function showAddAggregateDataModal() {
 
  <div class="form-group">
 
- <label class="form-label">Study ID</label>
+ <label class="form-label" for="adStudyId">Study ID</label>
 
- <input type="text" class="form-control" id="adStudyId" placeholder="e.g., Smith2020">
-
- </div>
-
- <div class="form-group">
-
- <label class="form-label">Log Effect (log OR, log HR, etc.)</label>
-
- <input type="number" step="0.01" class="form-control" id="adEffect" placeholder="e.g., -0.35">
+ <input type="text" class="form-control" id="adStudyId" aria-label="e.g., Smith2020" placeholder="e.g., Smith2020">
 
  </div>
 
  <div class="form-group">
 
- <label class="form-label">Standard Error</label>
+ <label class="form-label" for="adEffect">Log Effect (log OR, log HR, etc.)</label>
 
- <input type="number" step="0.01" class="form-control" id="adSE" placeholder="e.g., 0.15">
-
- </div>
-
- <div class="form-group">
-
- <label class="form-label">Sample Size</label>
-
- <input type="number" class="form-control" id="adN" placeholder="e.g., 500">
+ <input type="number" step="0.01" class="form-control" id="adEffect" aria-label="e.g., -0.35" placeholder="e.g., -0.35">
 
  </div>
 
  <div class="form-group">
 
- <label class="form-label">Number of Events (optional)</label>
+ <label class="form-label" for="adSE">Standard Error</label>
 
- <input type="number" class="form-control" id="adEvents" placeholder="e.g., 120">
+ <input type="number" step="0.01" class="form-control" id="adSE" aria-label="e.g., 0.15" placeholder="e.g., 0.15">
+
+ </div>
+
+ <div class="form-group">
+
+ <label class="form-label" for="adN">Sample Size</label>
+
+ <input type="number" class="form-control" id="adN" aria-label="e.g., 500" placeholder="e.g., 500">
+
+ </div>
+
+ <div class="form-group">
+
+ <label class="form-label" for="adEvents">Number of Events (optional)</label>
+
+ <input type="number" class="form-control" id="adEvents" aria-label="e.g., 120" placeholder="e.g., 120">
 
  </div>
 
@@ -43784,7 +43784,7 @@ function showPowerAnalysisModal() {
 
  <div class="form-group">
 
- <label>Minimum detectable effect (log scale for HR/OR)</label>
+ <label for="powerEffect">Minimum detectable effect (log scale for HR/OR)</label>
 
  <input type="number" id="powerEffect" value="0.3" step="0.1" class="form-control">
 
@@ -43792,7 +43792,7 @@ function showPowerAnalysisModal() {
 
  <div class="form-group">
 
- <label>Expected event rate (control group)</label>
+ <label for="powerEventRate">Expected event rate (control group)</label>
 
  <input type="number" id="powerEventRate" value="0.2" step="0.05" min="0" max="1" class="form-control">
 
@@ -43800,7 +43800,7 @@ function showPowerAnalysisModal() {
 
  <div class="form-group">
 
- <label>Significance level (alpha)</label>
+ <label for="powerAlpha">Significance level (alpha)</label>
 
  <select id="powerAlpha" class="form-control">
 
@@ -43816,7 +43816,7 @@ function showPowerAnalysisModal() {
 
  <div class="form-group">
 
- <label>Power (1 - beta)</label>
+ <label for="powerPower">Power (1 - beta)</label>
 
  <select id="powerPower" class="form-control">
 
@@ -43834,7 +43834,7 @@ function showPowerAnalysisModal() {
 
  <div class="form-group">
 
- <label>Allocation ratio (control:treatment)</label>
+ <label for="powerRatio">Allocation ratio (control:treatment)</label>
 
  <input type="number" id="powerRatio" value="1" step="0.5" min="0.5" max="3" class="form-control">
 
@@ -45754,7 +45754,7 @@ function showMetaRegressionModal() {
 
  <div class="form-group">
 
- <label>Covariate</label>
+ <label for="metaRegCovariate">Covariate</label>
 
  <select id="metaRegCovariate" class="form-control">
 
@@ -59324,7 +59324,7 @@ function showMultipleTestingModal() {
 
  '<p>Enter p-values (comma-separated) to adjust for multiple comparisons:</p>' +
 
- '<textarea id="pvalInput" class="form-input" rows="3" placeholder="0.01, 0.03, 0.12, 0.04"></textarea>' +
+ '<textarea id="pvalInput" class="form-input" rows="3" aria-label="0.01, 0.03, 0.12, 0.04" placeholder="0.01, 0.03, 0.12, 0.04"></textarea>' +
 
  '<div class="form-group" style="margin-top: 1rem;">' +
 
@@ -82734,7 +82734,7 @@ function showMediationAnalysis() {
 
                 <div class="form-group">
 
-                    <label class="form-label">Exposure/Treatment (X)</label>
+                    <label class="form-label" for="semExposure">Exposure/Treatment (X)</label>
 
                     <select class="form-select" id="semExposure">${varOptions}</select>
 
@@ -82742,7 +82742,7 @@ function showMediationAnalysis() {
 
                 <div class="form-group">
 
-                    <label class="form-label">Mediator (M)</label>
+                    <label class="form-label" for="semMediator">Mediator (M)</label>
 
                     <select class="form-select" id="semMediator">${varOptions}</select>
 
@@ -82750,7 +82750,7 @@ function showMediationAnalysis() {
 
                 <div class="form-group">
 
-                    <label class="form-label">Outcome (Y)</label>
+                    <label class="form-label" for="semOutcome">Outcome (Y)</label>
 
                     <select class="form-select" id="semOutcome">${varOptions}</select>
 
@@ -82762,7 +82762,7 @@ function showMediationAnalysis() {
 
             <div class="form-group">
 
-                <label class="form-label">Study Variable</label>
+                <label class="form-label" for="semStudy">Study Variable</label>
 
                 <select class="form-select" id="semStudy">
 
@@ -85154,7 +85154,7 @@ function showRiskPredictor() {
 
                     <div class="form-group">
 
-                        <label class="form-label">Age (years)</label>
+                        <label class="form-label" for="predAge">Age (years)</label>
 
                         <input type="number" class="form-input" id="predAge" value="60" min="18" max="100">
 
@@ -85162,7 +85162,7 @@ function showRiskPredictor() {
 
                     <div class="form-group">
 
-                        <label class="form-label">Sex</label>
+                        <label class="form-label" for="predSex">Sex</label>
 
                         <select class="form-select" id="predSex">
 
@@ -85178,7 +85178,7 @@ function showRiskPredictor() {
 
                     <div class="form-group">
 
-                        <label class="form-label">Baseline Risk (%)</label>
+                        <label class="form-label" for="predBaseline">Baseline Risk (%)</label>
 
                         <input type="number" class="form-input" id="predBaseline" value="20" min="1" max="100">
 
@@ -85190,7 +85190,7 @@ function showRiskPredictor() {
 
                     <div class="form-group">
 
-                        <label class="form-label">Disease Stage</label>
+                        <label class="form-label" for="predStage">Disease Stage</label>
 
                         <select class="form-select" id="predStage">
 
@@ -85620,7 +85620,7 @@ function showMetaRegCV() {
 
             <div class="form-group">
 
-                <label class="form-label">Select Moderator Variable</label>
+                <label class="form-label" for="cvModerator">Select Moderator Variable</label>
 
                 <select class="form-select" id="cvModerator">
 
@@ -88830,7 +88830,7 @@ function showPowerCalculator() {
 
                     <div class="form-group">
 
-                        <label class="form-label">Expected Effect Size (log scale)</label>
+                        <label class="form-label" for="pwrEffect">Expected Effect Size (log scale)</label>
 
                         <input type="number" class="form-input" id="pwrEffect" value="-0.5" step="0.1">
 
@@ -88838,7 +88838,7 @@ function showPowerCalculator() {
 
                     <div class="form-group">
 
-                        <label class="form-label">Number of Studies</label>
+                        <label class="form-label" for="pwrStudies">Number of Studies</label>
 
                         <input type="number" class="form-input" id="pwrStudies" value="10" min="2">
 
@@ -88846,7 +88846,7 @@ function showPowerCalculator() {
 
                     <div class="form-group">
 
-                        <label class="form-label">Average Study Size</label>
+                        <label class="form-label" for="pwrN">Average Study Size</label>
 
                         <input type="number" class="form-input" id="pwrN" value="200" min="10">
 
@@ -88854,7 +88854,7 @@ function showPowerCalculator() {
 
                     <div class="form-group">
 
-                        <label class="form-label">Expected τ² (heterogeneity)</label>
+                        <label class="form-label" for="pwrTau2">Expected τ² (heterogeneity)</label>
 
                         <input type="number" class="form-input" id="pwrTau2" value="0.1" step="0.01" min="0">
 
@@ -88862,7 +88862,7 @@ function showPowerCalculator() {
 
                     <div class="form-group">
 
-                        <label class="form-label">Significance Level (Î±)</label>
+                        <label class="form-label" for="pwrAlpha">Significance Level (Î±)</label>
 
                         <select class="form-select" id="pwrAlpha">
 
@@ -88878,7 +88878,7 @@ function showPowerCalculator() {
 
                     <div class="form-group">
 
-                        <label class="form-label">Test Type</label>
+                        <label class="form-label" for="pwrTest">Test Type</label>
 
                         <select class="form-select" id="pwrTest">
 
@@ -88906,7 +88906,7 @@ function showPowerCalculator() {
 
                     <div class="form-group">
 
-                        <label class="form-label">Desired Power</label>
+                        <label class="form-label" for="ssDesiredPower">Desired Power</label>
 
                         <select class="form-select" id="ssDesiredPower">
 
@@ -88922,7 +88922,7 @@ function showPowerCalculator() {
 
                     <div class="form-group">
 
-                        <label class="form-label">Expected Effect Size</label>
+                        <label class="form-label" for="ssEffect">Expected Effect Size</label>
 
                         <input type="number" class="form-input" id="ssEffect" value="-0.3" step="0.1">
 
@@ -88930,7 +88930,7 @@ function showPowerCalculator() {
 
                     <div class="form-group">
 
-                        <label class="form-label">Expected τ²</label>
+                        <label class="form-label" for="ssTau2">Expected τ²</label>
 
                         <input type="number" class="form-input" id="ssTau2" value="0.1" step="0.01">
 
@@ -88938,7 +88938,7 @@ function showPowerCalculator() {
 
                     <div class="form-group">
 
-                        <label class="form-label">Average Within-Study Variance</label>
+                        <label class="form-label" for="ssWithinVar">Average Within-Study Variance</label>
 
                         <input type="number" class="form-input" id="ssWithinVar" value="0.05" step="0.01">
 
@@ -88966,7 +88966,7 @@ function showPowerCalculator() {
 
                     <div class="form-group">
 
-                        <label class="form-label">Simulations</label>
+                        <label class="form-label" for="simN">Simulations</label>
 
                         <input type="number" class="form-input" id="simN" value="1000" min="100" max="10000">
 
@@ -88974,7 +88974,7 @@ function showPowerCalculator() {
 
                     <div class="form-group">
 
-                        <label class="form-label">True Effect</label>
+                        <label class="form-label" for="simEffect">True Effect</label>
 
                         <input type="number" class="form-input" id="simEffect" value="-0.4" step="0.1">
 
@@ -88982,7 +88982,7 @@ function showPowerCalculator() {
 
                     <div class="form-group">
 
-                        <label class="form-label">Studies per MA</label>
+                        <label class="form-label" for="simK">Studies per MA</label>
 
                         <input type="number" class="form-input" id="simK" value="8" min="2">
 
@@ -94280,7 +94280,7 @@ function showClusteredIPDAnalysis() {
 
                     <div style="margin-bottom:15px;">
 
-                        <label style="display:block;margin-bottom:5px;font-weight:500;">Outcome Variable:</label>
+                        <label style="display:block;margin-bottom:5px;font-weight:500;" for="ipdOutcomeVar">Outcome Variable:</label>
 
                         <select id="ipdOutcomeVar" style="width:100%;padding:8px;border-radius:4px;border:1px solid var(--border-color);">
 
@@ -94292,7 +94292,7 @@ function showClusteredIPDAnalysis() {
 
                     <div style="margin-bottom:15px;">
 
-                        <label style="display:block;margin-bottom:5px;font-weight:500;">Treatment Variable:</label>
+                        <label style="display:block;margin-bottom:5px;font-weight:500;" for="ipdTreatmentVar">Treatment Variable:</label>
 
                         <select id="ipdTreatmentVar" style="width:100%;padding:8px;border-radius:4px;border:1px solid var(--border-color);">
 
@@ -94304,7 +94304,7 @@ function showClusteredIPDAnalysis() {
 
                     <div style="margin-bottom:15px;">
 
-                        <label style="display:block;margin-bottom:5px;font-weight:500;">Cluster/Study Variable:</label>
+                        <label style="display:block;margin-bottom:5px;font-weight:500;" for="ipdClusterVar">Cluster/Study Variable:</label>
 
                         <select id="ipdClusterVar" style="width:100%;padding:8px;border-radius:4px;border:1px solid var(--border-color);">
 
@@ -94316,7 +94316,7 @@ function showClusteredIPDAnalysis() {
 
                     <div style="margin-bottom:15px;">
 
-                        <label style="display:block;margin-bottom:5px;font-weight:500;">Method:</label>
+                        <label style="display:block;margin-bottom:5px;font-weight:500;" for="ipdMethod">Method:</label>
 
                         <select id="ipdMethod" style="width:100%;padding:8px;border-radius:4px;border:1px solid var(--border-color);">
 
@@ -109120,7 +109120,7 @@ function showIPDAutomationSpecModal() {
       <div class="alert alert-info" style="margin:0;">
         <strong>Automation API:</strong> script-first JSON spec runner for reproducible IPD workflows.
       </div>
-      <label class="form-label">Automation Spec (JSON)</label>
+      <label class="form-label" for="ipdAutomationSpecInput">Automation Spec (JSON)</label>
       <textarea id="ipdAutomationSpecInput" class="form-textarea" style="min-height:300px;font-family:Consolas,Monaco,monospace;">${initialSpec}</textarea>
       <div id="ipdAutomationSpecStatus" style="font-size:0.9rem;color:var(--text-muted);">Ready.</div>
       <div style="display:flex;gap:0.5rem;flex-wrap:wrap;">
@@ -109572,33 +109572,33 @@ function showIndependentSignoffModal() {
       </div>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:0.6rem;">
         <div>
-          <label class="form-label">Reviewer Name</label>
-          <input id="indSignoffReviewer" class="form-input" placeholder="e.g., Dr Jane Smith">
+          <label class="form-label" for="indSignoffReviewer">Reviewer Name</label>
+          <input id="indSignoffReviewer" class="form-input" aria-label="e.g., Dr Jane Smith" placeholder="e.g., Dr Jane Smith">
         </div>
         <div>
-          <label class="form-label">Reviewer Email</label>
-          <input id="indSignoffEmail" class="form-input" placeholder="e.g., reviewer@org.edu">
+          <label class="form-label" for="indSignoffEmail">Reviewer Email</label>
+          <input id="indSignoffEmail" class="form-input" aria-label="e.g., reviewer@org.edu" placeholder="e.g., reviewer@org.edu">
         </div>
         <div>
-          <label class="form-label">Organization</label>
-          <input id="indSignoffOrg" class="form-input" placeholder="e.g., Independent Methods Board">
+          <label class="form-label" for="indSignoffOrg">Organization</label>
+          <input id="indSignoffOrg" class="form-input" aria-label="e.g., Independent Methods Board" placeholder="e.g., Independent Methods Board">
         </div>
         <div>
-          <label class="form-label">Reviewer Role</label>
-          <input id="indSignoffRole" class="form-input" placeholder="e.g., External Statistical Reviewer">
+          <label class="form-label" for="indSignoffRole">Reviewer Role</label>
+          <input id="indSignoffRole" class="form-input" aria-label="e.g., External Statistical Reviewer" placeholder="e.g., External Statistical Reviewer">
         </div>
       </div>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:0.6rem;">
         <div>
-          <label class="form-label">Affiliation (optional)</label>
-          <input id="indSignoffAffiliation" class="form-input" placeholder="e.g., Regulatory Science Unit">
+          <label class="form-label" for="indSignoffAffiliation">Affiliation (optional)</label>
+          <input id="indSignoffAffiliation" class="form-input" aria-label="e.g., Regulatory Science Unit" placeholder="e.g., Regulatory Science Unit">
         </div>
         <div>
-          <label class="form-label">Date</label>
+          <label class="form-label" for="indSignoffDate">Date</label>
           <input id="indSignoffDate" type="date" class="form-input" value="${defaultDate}">
         </div>
         <div>
-          <label class="form-label">Decision</label>
+          <label class="form-label" for="indSignoffDecision">Decision</label>
           <select id="indSignoffDecision" class="form-select">
             <option value="agree">Agree</option>
             <option value="agree_with_notes">Agree with notes</option>
@@ -109606,8 +109606,8 @@ function showIndependentSignoffModal() {
           </select>
         </div>
         <div>
-          <label class="form-label">Comments (optional)</label>
-          <textarea id="indSignoffComments" class="form-textarea" style="min-height:64px;" placeholder="Optional notes"></textarea>
+          <label class="form-label" for="indSignoffComments">Comments (optional)</label>
+          <textarea id="indSignoffComments" class="form-textarea" style="min-height:64px;" aria-label="Optional notes" placeholder="Optional notes"></textarea>
         </div>
       </div>
       <div style="display:flex;gap:0.5rem;flex-wrap:wrap;">
