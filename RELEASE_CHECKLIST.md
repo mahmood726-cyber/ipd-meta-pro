@@ -76,7 +76,7 @@ If needed, provide explicit benchmark Python and Rscript paths:
 
 ```bash
 python dev/build-scripts/release_checklist.py --with-r-parity \
-  --parity-python "C:\Users\user\AppData\Local\Programs\Python\Python313\python.exe" \
+  --parity-python "<path/to/Python313/python.exe>" \
   --rscript "C:\Program Files\R\R-4.5.2\bin\Rscript.exe"
 ```
 
@@ -96,7 +96,7 @@ With explicit Python/R paths:
 
 ```bash
 python dev/build-scripts/release_checklist.py --with-r-parity --with-frontier-gap \
-  --parity-python "C:\Users\user\AppData\Local\Programs\Python\Python313\python.exe" \
+  --parity-python "<path/to/Python313/python.exe>" \
   --rscript "C:\Program Files\R\R-4.5.2\bin\Rscript.exe"
 ```
 
@@ -114,7 +114,7 @@ With explicit Python/R paths:
 
 ```bash
 python dev/build-scripts/release_checklist.py --with-r-parity --with-frontier-gap --with-loop7 \
-  --parity-python "C:\Users\user\AppData\Local\Programs\Python\Python313\python.exe" \
+  --parity-python "<path/to/Python313/python.exe>" \
   --rscript "C:\Program Files\R\R-4.5.2\bin\Rscript.exe"
 ```
 

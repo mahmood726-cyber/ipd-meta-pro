@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env python3
+#!/usr/bin/env python3
 """Add comprehensive editorial review to the help modal"""
 
 import sys

@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env python3
+#!/usr/bin/env python3
 """Add id to pre element for R code copy functionality"""
 
 import sys

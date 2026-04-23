@@ -3,3 +3,15 @@ node_modules/
 *.pyc
 __pycache__/
 .env
+
+# Sentinel/Overmind auto-generated audit outputs (not source of truth)
+review-findings.md
+review-findings-r*.md
+review-findings.jsonl
+sentinel-findings.md
+sentinel-findings.jsonl
+STUCK_FAILURES.md
+STUCK_FAILURES.jsonl
+PROGRESS.md
+dev/review-findings.md
+dev/review-findings-r*.md

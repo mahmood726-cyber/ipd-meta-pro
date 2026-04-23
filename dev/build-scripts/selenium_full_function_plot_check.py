@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# sentinel:skip-file  (P0-hardcoded-local-path: dev/build tooling with intentional fixed Python/Edge interpreter paths for parity testing)
 """
 Comprehensive UI smoke check for function handler wiring and major plot rendering.
 

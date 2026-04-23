@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env python3
+#!/usr/bin/env python3
 """Add missing JavaScript functions to IPD Meta-Analysis Pro"""
 
 import sys

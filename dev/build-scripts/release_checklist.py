@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env python3
+#!/usr/bin/env python3
 """Release checklist runner for IPD Meta-Analysis Pro."""
 
 from __future__ import annotations

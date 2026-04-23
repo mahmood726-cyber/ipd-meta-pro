@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env python3
+#!/usr/bin/env python3
 """Extract JavaScript from HTML and check for syntax errors"""
 
 import re

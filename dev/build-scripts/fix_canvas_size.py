@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env python3
+#!/usr/bin/env python3
 """Fix canvas size 0 issue in plot functions"""
 
 import sys

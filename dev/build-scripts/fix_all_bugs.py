@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env python3
+#!/usr/bin/env python3
 """
 Comprehensive Bug Fix Script for IPD Meta-Analysis Pro
 Fixes all identified bugs including:

@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env python3
+#!/usr/bin/env python3
 """
 Statistical Corrections for IPD Meta-Analysis Pro
 Fixes identified bugs in statistical calculations

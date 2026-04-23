@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env python3
+#!/usr/bin/env python3
 """Fix null parent error in inner-tab click handler"""
 
 import sys

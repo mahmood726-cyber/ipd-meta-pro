@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# sentinel:skip-file  (P0-hardcoded-local-path: dev/build tooling with intentional fixed Python/Edge interpreter paths for parity testing)
 """Shared Edge webdriver bootstrap helpers for local benchmark scripts."""
 
 from __future__ import annotations

@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env python3
+#!/usr/bin/env python3
 """
 Editorial Revision V3 - Fix All Issues from Research Synthesis Methods Review
 Addresses all 10 issues identified in editorial review

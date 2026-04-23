@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env python3
+#!/usr/bin/env python3
 """
 Add R Validation Report and Code to IPD Meta-Analysis Pro
 Includes editorial review standards for Research Synthesis Methods

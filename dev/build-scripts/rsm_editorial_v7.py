@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env python3
+#!/usr/bin/env python3
 """
 RSM EDITORIAL REVIEW V7 - COMPREHENSIVE METHODOLOGICAL ENHANCEMENTS
 

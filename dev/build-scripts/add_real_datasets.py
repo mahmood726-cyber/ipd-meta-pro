@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env python3
+#!/usr/bin/env python3
 """
 Add 15+ Real IPD Datasets from Classic R Packages
 These are well-validated, published datasets used in survival analysis literature

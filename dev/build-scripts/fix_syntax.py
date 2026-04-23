@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env python3
+#!/usr/bin/env python3
 """Fix the JavaScript syntax error by combining split return statements"""
 
 import sys

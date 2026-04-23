@@ -1,4 +1,4 @@
-﻿# Fix Editorial Review Issues - Version 2
+# Fix Editorial Review Issues - Version 2
 # Addresses all remaining concerns from Research Synthesis Methods review
 
 import re

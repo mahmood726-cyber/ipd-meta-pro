@@ -1,4 +1,4 @@
-﻿# Beat R Features - Make IPD Meta-Analysis Pro Superior to R
+# Beat R Features - Make IPD Meta-Analysis Pro Superior to R
 # Features that R packages don't have or do poorly
 
 import re
